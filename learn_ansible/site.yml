@@ -1,12 +1,7 @@
 ---
   - name: test my module
     hosts: localhost
-    tasks:
-      - name: run file creation module
-        vp_netology.learn_ansible.my-test-role:
-          path: "/tmp/file_temp.txt"
-          content: "My new content"
-        register: test_result
-      - name: Print result
-        debug:
-          msg: "{{ test_result }}"
+    collections:
+      - vp_netology.learn_ansible
+    roles:
+      - my-test-role

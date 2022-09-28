@@ -1,5 +1,5 @@
 ---
 - name: Run file creation module
-    my_own_module:
-      path: "{{ path }}"
-      content: "{{ content }}"
+  my_own_module:
+    path: "{{ path }}"
+    content: "{{ content }}"
